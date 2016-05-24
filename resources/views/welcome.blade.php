@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Muestra Iberoamericana</title>
-        <title>@yield('titleMuestraITVEC','Muestra Iberoamericana de Televisión Educativa y Cultural')</title>
+        <title>@yield('titleMuestraIberoamericana','Muestra Iberoamericana de Televisión Educativa y Cultural')</title>
         <!--  App Descripción  -->
         <meta name="description" content="Muestra Iberoamericana de Televisión Educativa y Cultural"/>
         <meta charset="utf-8">
@@ -95,12 +95,28 @@
                 border: 2px solid grey;
             }
             #map-row {}
-#map-overlay {
-    height:400px;
-    margin-top:-405px;
-    background-color:#669de5;
-    padding:40px;
-}
+            #map-overlay {
+                height:400px;
+                margin-top:-405px;
+                background-color:#669de5;
+                padding:40px;
+            }
+            #footer {
+/*                position: absolute;
+                bottom: 0;
+                width: 100%;
+                 Set the fixed height of the footer here 
+                height: 280px;
+                background: 
+                     color overlay  
+                    linear-gradient(
+                    rgba(240, 212, 0, 0.45), 
+                    rgba(0, 0, 0, 0.45)
+                    ),
+                     image to overlay 
+                    url();*/
+            }
+
         </style>
     </head>
     <body>
@@ -164,7 +180,7 @@
         <section id="cd-timeline" class="cd-container">
             <div class="cd-timeline-block" id="fases">
                 <div class="cd-timeline-img cd-picture">
-                        <img src="http://lorempixel.com/image_output/animals-q-c-50-50-7.jpg" alt="Picture">
+                    <img src="http://lorempixel.com/image_output/animals-q-c-50-50-7.jpg" alt="Picture">
 
                 </div> <!-- cd-timeline-img -->
 
@@ -192,7 +208,7 @@
 
             <div class="cd-timeline-block">
                 <div class="cd-timeline-img cd-movie">
-                        <img src="http://lorempixel.com/image_output/business-q-c-50-50-2.jpg" alt="Movie">
+                    <img src="http://lorempixel.com/image_output/business-q-c-50-50-2.jpg" alt="Movie">
                 </div> <!-- cd-timeline-img -->
 
                 <div class="cd-timeline-content text-justify">
@@ -207,7 +223,7 @@
 
             <div class="cd-timeline-block">
                 <div class="cd-timeline-img cd-location">
-                        <img src="http://lorempixel.com/image_output/food-q-c-50-50-10.jpg" alt="Location">
+                    <img src="http://lorempixel.com/image_output/food-q-c-50-50-10.jpg" alt="Location">
                 </div> <!-- cd-timeline-img -->
 
                 <div class="cd-timeline-content">
@@ -226,7 +242,7 @@
             </div> <!-- cd-timeline-block -->
             <div class="cd-timeline-block">
                 <div class="cd-timeline-img cd-picture">
-                        <img src="http://lorempixel.com/image_output/sports-q-c-50-50-6.jpg" alt="Picture">
+                    <img src="http://lorempixel.com/image_output/sports-q-c-50-50-6.jpg" alt="Picture">
                 </div> <!-- cd-timeline-img -->
 
                 <div class="cd-timeline-content text-justify">
@@ -354,7 +370,7 @@
                         <input type="file" name="" class="form-control">
                     </div>            
                 </div>
-                                <div class="col-md-12">
+                <div class="col-md-12">
                     <label for="" class="control-label col-md-2">Horizontal 3 (Medidas)</label>
                     <div class="col-md-10">
                         <input type="file" name="" class="form-control">
@@ -388,43 +404,43 @@
         </div>
         <!--Fin Registro de convocatoria--->
         <hr class="hrDivide">         
-    
-   <div id="footer">
-    <div class="container">
-        <div class="row">
-            <h3 class="footertext">Acerca de:</h3>
-            <br>
-              <div class="col-md-4">
-                <center>
-                  <img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle" alt="the-brains">
-                  <br>
-                  <h4 class="footertext">DGTVE</h4>
-                  <p class="footertext">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br>
-                </center>
-              </div>
-              <div class="col-md-4">
-                <center>
-                  <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
-                  <br>
-                  <h4 class="footertext">Otro</h4>
-                  <p class="footertext">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br>
-                </center>
-              </div>
-              <div class="col-md-4">
-                <center>
-                  <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
-                  <br>
-                  <h4 class="footertext">Otro</h4>
-                  <p class="footertext">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br>
-                </center>
-              </div>
+
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <h3 class="footertext">Acerca de:</h3>
+                    <br>
+                    <div class="col-md-4">
+                        <center>
+                            <img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle" alt="the-brains">
+                            <br>
+                            <h4 class="footertext">DGTVE</h4>
+                            <p class="footertext">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br>
+                        </center>
+                    </div>
+                    <div class="col-md-4">
+                        <center>
+                            <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
+                            <br>
+                            <h4 class="footertext">Otro</h4>
+                            <p class="footertext">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br>
+                        </center>
+                    </div>
+                    <div class="col-md-4">
+                        <center>
+                            <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
+                            <br>
+                            <h4 class="footertext">Otro</h4>
+                            <p class="footertext">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br>
+                        </center>
+                    </div>
+                </div>
+                <div class="row">
+                    <p><center><a href="#">DGTVE</a> <p class="footertext">Copyright 2016</p></center></p>
+                </div>
             </div>
-            <div class="row">
-            <p><center><a href="#">DGTVE</a> <p class="footertext">Copyright 2016</p></center></p>
         </div>
     </div>
-</div>
-</div>
 </body>
 </html>
 <script>
