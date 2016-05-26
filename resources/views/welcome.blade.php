@@ -41,7 +41,6 @@
     </head>
     <body>
         <div class="container-fluid parallax-window"  data-parallax="scroll" style="background-image:url('{{asset('imagenes/imgIndex/muestraback.jpg')}}');">                    
-	
         @include('viewMuestra.bannerMuestra')
         </div>
         <div class="container-fluid">

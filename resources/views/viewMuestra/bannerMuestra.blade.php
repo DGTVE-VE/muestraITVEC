@@ -1,8 +1,10 @@
 <!--Inicia Index-->
-<div class="container">
+<div class="container-fluid">
     <div class="row">
+        <div class="col-md-12"><i id="compartirMuestra" class="pull-right fa fa-share-alt-square menuCompatir" aria-hidden="true"></i></div>
         <!--Muestra Iberoamericana-->
-        <div class="col-md-12 divTrans">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 divTrans">
             <div class="col-md-1"></div>
             <!--<div class="col-md-10 tituloMuestra">-->
             <label class="text-center tituloMuestra">Muestra Iberoamericana de Televisión Educativa y Cultural</label>
@@ -18,7 +20,7 @@
         <div class="col-md-12">
             <div class="col-md-2"></div>
             <div class="col-md-4">
-                <a href="#fases" >
+                <a href="#fases" class="nounderline" >
                     <div class="text-center btn_concurso animated bounceInLeft">
                         <p>Consulta las bases</p>
                         <i class="fa fa-angle-double-down flechaBtn" aria-hidden="true"></i>

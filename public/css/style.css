@@ -484,6 +484,10 @@ header h1 {
 
 
 /*Estilos agregados por Sonia Martínez*/
+.nounderline:hover{
+ text-decoration: none;    
+}
+
 .container-fluid{
     background-repeat: no-repeat;
     background-position: center center;
@@ -529,15 +533,8 @@ header h1 {
 .menuCompatir{
     color: white;
     font-size: 2em;
-    padding: 50%;
 }
 .hrDivide{
     border: 2px solid grey;
 }
-#map-row {}
-#map-overlay {
-    height:400px;
-    margin-top:-405px;
-    background-color:#669de5;
-    padding:40px;
-}
+
