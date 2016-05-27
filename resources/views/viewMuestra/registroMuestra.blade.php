@@ -25,7 +25,14 @@
 
     {!! BootForm::textarea('sinopsis', 'Breve sinopsis') !!}
 
-    {!! BootForm::file('file', 'Medio para enviar el archivo') !!}
+    {!! BootForm::text('url', 'url video de youtube') !!}
+
+    {!! BootForm::file('file1', 'Imagen 1') !!}
+    {!! BootForm::file('file2', 'Imagen 2') !!}
+    {!! BootForm::file('file3', 'Imagen 3') !!}
+
+    <a href="#">Términos y condiciones</a>
+    {!! BootForm::checkbox('condiciones', 'Acepto los términos y condiciones') !!}
 
     {!! BootForm::submit ( 'Enviar' ) !!}
     {!! BootForm::close() !!}

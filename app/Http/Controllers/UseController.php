@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use DB;
+use File;
 use Illuminate\Http\Request;
 
 class UseController extends Controller {
@@ -27,12 +28,41 @@ class UseController extends Controller {
 
 	public function save(Request $request){
 
-		#$file = $request->file('file');
-		print_r($request->file);
-		//indicamos que queremos guardar un nuevo archivo en el disco local
-		#\Storage::disk('local')->put('miarchivo.jpg',\File::get($file));
+		$this->validate($request, [
 
-		return $this->welcome;
+			'institucion' => 'required',
+			'pais' => 'required',
+			'direccion' => 'required',
+			'representante' => 'required',
+			'cargo' => 'required',
+			'tel' => 'required|numeric',
+			'correo' => 'required|email|unique:users',
+			'produccion' => 'required',
+			'productor' => 'required',
+			'tematica' => 'required',
+			'sinopsis' => 'required',
+			'url' => 'required',
+			'file1' => 'mimes:jpeg,bmp,png',
+			'file2' => 'mimes:jpeg,bmp,png',
+			'file3' => 'mimes:jpeg,bmp,png',
+			'condiciones' => 'required|accepted'
+
+
+		]);
+
+		$file = $request->file('file1');
+		$nombre = $file->getClientOriginalName();
+
+		#$id_user= '245sd';
+
+		#\Storage::MakeDirectory($id_user);
+
+		\Storage::disk('local')->put($nombre, File::get($file));
+
+		//indicamos que queremos guardar un nuevo archivo en el disco local
+
+
+		return $this->welcome();
 
 	}
 
