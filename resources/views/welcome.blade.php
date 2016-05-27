@@ -19,7 +19,8 @@
         <link rel="stylesheet" href="{{ asset('css/ihover.css') }}" >
         <link rel="stylesheet" href="{{ asset('css/animate.css') }}" >        
         <link rel="stylesheet" href="{{ asset('css/reset.css') }}" > <!-- Timeline -->       
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}" > <!-- Timeline -->       
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" > <!-- Timeline -->  
+        <link rel="stylesheet" href="{{ asset('css/estilos3.css') }}" > <!-- Redes Sociales -->  
 
         <!--CDN FormHelpers-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.css" rel="stylesheet"/>
@@ -41,9 +42,11 @@
     </head>
     <body>
         <div class="container-fluid parallax-window"  data-parallax="scroll" style="background-image:url('{{asset('imagenes/imgIndex/muestraback.jpg')}}');">                    
+        @include('viewMuestra.socialesMuestra')
         @include('viewMuestra.bannerMuestra')
         </div>
         <div class="container-fluid">
+            
         <hr class="hrDivide">                 
         @include('viewMuestra.fasesMuestra')
         <hr class="hrDivide">              

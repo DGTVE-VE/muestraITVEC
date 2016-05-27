@@ -1,0 +1,73 @@
+.mobile-social-share {
+    display: block !important;
+    min-height: 80px !important;
+    /*margin: 50px 0; margen superior del row de redes sociales*/
+  }
+
+.share-group {
+    float: right;
+    margin: 15px 12px 0 0; /*margen de boton que despliega las redes sociales */
+}
+
+.mobile-social-share ul { /*Efectos para contenedor de redes */
+    float: right;
+    list-style: none outside none;
+    margin: 0;
+    min-width: 61px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+}
+.mobile-social-share li { /*Alineación de los logos de redes*/
+    display: block;
+    font-size: 18px;
+    list-style: none outside none;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-top: 8px;
+     border: 0;
+    box-shadow: 0;
+}
+
+.btn-twitter {
+    background-color: #3399CC !important;
+    width: 61px;
+    color:#FFFFFF!important;
+}
+
+    .btn-facebook {
+    background-color: #3D5B96 !important;
+    width: 61px;
+    color:#FFFFFF!important;
+}
+
+.btn-youtube {
+    background-color: #DD3F34 !important;
+    width: 61px;
+    color:#FFFFFF!important;
+}
+
+#socialShare {
+    max-width:109px;
+    margin-bottom:18px;
+}
+
+#socialShare > a{
+    padding: 16px 20px 18px 28px; /*tamaño de icono que despliega redes sociales */
+    background: transparent;
+    border: 0;
+}
+
+@media (max-width : 320px) {
+    #socialHolder{
+        padding-left:5px;
+        padding-right:5px;
+}
+          
+    #socialShare{
+        margin-left:5px;
+        margin-right:5px;
+         border: 0;
+    box-shadow: 0;
+    }
+}
