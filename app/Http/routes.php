@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'UseController@welcome');
+
+Route::post('save', 'UseController@save');
+
+
+//Se cambio al controlador para poder acceder al la base de datos
+// Route::get('/', function () {
+//     return view('welcome')
+// });
