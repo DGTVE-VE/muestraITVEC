@@ -16,7 +16,7 @@ html * {
 
 body {
     font-size: 100%;
-    font-family: "Droid Serif", serif;
+    font-family: 'Roboto', sans-serif;
     color: #000;
     background-color: #e9f0f5;
 }
@@ -24,7 +24,7 @@ body {
 a {
     color: #acb7c0;
     text-decoration: none;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -32,7 +32,7 @@ img {
 }
 
 h1, h2 {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
@@ -306,6 +306,7 @@ header h1 {
         font-size: 14px;
         font-size: 0.875rem;
     }
+
 }
 @media only screen and (min-width: 1170px) {
     .cd-timeline-content {
@@ -357,6 +358,7 @@ header h1 {
         -moz-animation: cd-bounce-2 0.6s;
         animation: cd-bounce-2 0.6s;
     }
+
 }
 
 @media only screen and (min-width: 1170px) {
@@ -496,7 +498,7 @@ header h1 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 800px;
+    height: auto;
 }
 
 .title {
@@ -507,7 +509,7 @@ header h1 {
     font-size: 3em;
 }
 .divTrans{
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.7);
     padding: 5%;
 }
 .parrafoMuestra{
@@ -519,8 +521,9 @@ header h1 {
     height: 130px;
     color: white;
     margin-top: 10%;
-    padding: 10%;
+    padding: 5%;
     font-size: 2em;
+    position: relative;
 }
 .btn_concurso:hover{
     background-color: rgba(255,255,255,.7);
@@ -538,3 +541,8 @@ header h1 {
     border: 2px solid grey;
 }
 
+.numRegistro{
+    color: white;
+    font-size: 4em;
+    padding: 0 0 1% 24%;
+}

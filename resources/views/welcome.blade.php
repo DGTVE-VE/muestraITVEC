@@ -27,6 +27,8 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css" rel="stylesheet"/>
         <!--fin FormHelpers -->
 
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
@@ -41,17 +43,14 @@
         <script src="{{asset('js/main.js')}}"></script> <!-- Timeline -->
     </head>
     <body>
-        <div class="container-fluid parallax-window"  data-parallax="scroll" style="background-image:url('{{asset('imagenes/imgIndex/muestraback.jpg')}}');">                    
-        @include('viewMuestra.bannerMuestra')
+        <div class="container-fluid parallax-window"  data-parallax="scroll" style="background-image:url('{{asset('imagenes/imgIndex/back.jpg')}}');">                    
+        <!--<div class="container-fluid parallax-window" data-parallax="scroll" style="background-image:url('http://placehold.it/1200x800');"></div>-->
+            @include('viewMuestra.bannerMuestra')
         </div>
-        <div class="container-fluid">
-            
-        <hr class="hrDivide">                 
-        @include('viewMuestra.fasesMuestra')
-        <hr class="hrDivide">              
-        @include('viewMuestra.registroMuestra')
-        <hr class="hrDivide">              
-        @include('viewMuestra.pieMuestra')
+        <div class="container-fluid">            
+            <!--<hr class="hrDivide">-->                 
+            @include('viewMuestra.fasesMuestra')
+            @include('viewMuestra.pieMuestra')
         </div>
     </body>
 </html>
