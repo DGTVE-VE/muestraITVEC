@@ -19,6 +19,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #000;
     background-color: #e9f0f5;
+    overflow-x: hidden;
 }
 
 a {
@@ -490,7 +491,7 @@ header h1 {
  text-decoration: none;    
 }
 
-.container-fluid{
+.container-fluid-back{
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed; 
@@ -509,7 +510,7 @@ header h1 {
     font-size: 3em;
 }
 .divTrans{
-    background: rgba(0,0,0,.7);
+    background: rgba(0,0,0,.5);
     padding: 5%;
 }
 .parrafoMuestra{

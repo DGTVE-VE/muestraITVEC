@@ -43,15 +43,15 @@
         <script src="{{asset('js/main.js')}}"></script> <!-- Timeline -->
     </head>
     <body>
-        <div class="container-fluid parallax-window"  data-parallax="scroll" style="background-image:url('{{asset('imagenes/imgIndex/back.jpg')}}');">                    
+        <div class="container-fluid parallax-window container-fluid-back"  data-parallax="scroll" style="background-image:url('{{asset('imagenes/imgIndex/back.jpg')}}');">                    
         <!--<div class="container-fluid parallax-window" data-parallax="scroll" style="background-image:url('http://placehold.it/1200x800');"></div>-->
             @include('viewMuestra.bannerMuestra')
         </div>
         <div class="container-fluid">            
             <!--<hr class="hrDivide">-->                 
-            @include('viewMuestra.fasesMuestra')
-            @include('viewMuestra.pieMuestra')
+            @include('viewMuestra.fasesMuestra')            
         </div>
+        @include('viewMuestra.pieMuestra')
     </body>
 </html>
 <script>
