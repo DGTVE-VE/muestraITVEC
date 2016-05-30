@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -15,6 +14,7 @@ Route::get('/', 'UseController@welcome');
 
 Route::post('save', 'UseController@save');
 
+Route::any('registro', 'UseController@registro');
 
 //Se cambio al controlador para poder acceder al la base de datos
 // Route::get('/', function () {

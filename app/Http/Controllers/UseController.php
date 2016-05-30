@@ -13,6 +13,11 @@ class UseController extends Controller {
 
 	public function welcome(){
 
+		return view('welcome');
+	}
+
+	public function registro(){
+
 		$tema = DB::table('muestra_tematica')->get();
 
 		$tematica = array();
@@ -23,10 +28,10 @@ class UseController extends Controller {
 			$i++;
 		}
 
-		return view('welcome')->with('tematica', $tematica);
+			return view('viewMuestra.registroMuestra')->with('tematica', $tematica);
 	}
 
-	public function save(Request $request){
+public function save(Request $request){
 
 		$this->validate($request, [
 
@@ -87,13 +92,13 @@ class UseController extends Controller {
 		\Storage::MakeDirectory($institucion.'_'.$id);
 
 		$img1 = $file1->getClientOriginalName();
-		\Storage::disk('local')->put($institucion.'_'.$id.'/'.$img1, File::get($file1));
+		\Storage::disk('local')->put($institucion.'_'.$id.'/'.'img1.jpg', File::get($file1));
 
 		$img2 = $file2->getClientOriginalName();
-		\Storage::disk('local')->put($institucion.'_'.$id.'/'.$img2, File::get($file2));
+		\Storage::disk('local')->put($institucion.'_'.$id.'/'.'img2.jpg', File::get($file2));
 
 		$img3 = $file3->getClientOriginalName();
-		\Storage::disk('local')->put($institucion.'_'.$id.'/'.$img3, File::get($file3));
+		\Storage::disk('local')->put($institucion.'_'.$id.'/'.'img3.jpg', File::get($file3));
 
 
 		return $this->welcome();
