@@ -1,12 +1,13 @@
 <!--Muestra Convocatoria-->
 <div class="divider text-center" id="fases">
-    <h1>FASES DEL CONCURSO</h1>
+<!--    <h1>FASES DEL CONCURSO</h1>-->
 </div>
 <section id="cd-timeline" class="cd-container">
 
     <!--FASE 1-->
     <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-picture">
+        <div class="cd-timeline-img">
+            {{ HTML::image('imagenes/imgIndex/uno.png','Fase 1', array('class'=>'cd-date'))}}
         </div> <!-- cd-timeline-img -->
         <div class="cd-timeline-content text-justify">
             <h2 class="text-center">Registro y envío de contenidos</h2>
@@ -14,7 +15,7 @@
             <p>Se realizará del 20 de junio hasta el 01 de agosto del presente año, hasta las 18 horas del Centro de México.</p>                   
             <p>Las categorías de participación son: </p>
             <ul>
-                <li>Niños y jóvenes</li>
+                <li class="">Niños y jóvenes</li>
                 <li>Familia y educación </li>
                 <li>Arte y cultura</li>
                 <li>Derechos humanos y equidad de género</li>
@@ -29,8 +30,9 @@
 
     <!--FASE 2-->
     <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-            </div> <!-- cd-timeline-img -->
+        <div class="cd-timeline-img">
+            {{ HTML::image('imagenes/imgIndex/dos.png','Fase 1', array('class'=>'cd-date'))}}
+        </div> <!-- cd-timeline-img -->
 
         <div class="cd-timeline-content text-justify">
             <h2 class="text-center">Votación</h2>
@@ -46,8 +48,9 @@
 
     <!--FASE 3-->
     <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-picture">
-            </div> <!-- cd-timeline-img -->
+        <div class="cd-timeline-img">
+            {{ HTML::image('imagenes/imgIndex/tres.png','Fase 1', array('class'=>'cd-date'))}}
+        </div> <!-- cd-timeline-img -->
         <div class="cd-timeline-content">
             <h2 class="text-center">Resultado de finalistas</h2>
             <hr>
@@ -60,9 +63,9 @@
 
 
     <!--FASE 4-->
-    <br><br><br>
     <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
+        <div class="cd-timeline-img">
+            {{ HTML::image('imagenes/imgIndex/cuatro.png','Fase 1', array('class'=>'cd-date'))}}
         </div> <!-- cd-timeline-img -->
         <div class="cd-timeline-content text-justify">
             <h2 class="text-center">Resumen de producciones finalistas</h2>
@@ -74,12 +77,12 @@
             {{ HTML::image('imagenes/imgIndex/4.jpg','Fase 4', array('class'=>'cd-date'))}}
         </div> <!-- cd-timeline-content -->
     </div> <!-- cd-timeline-block -->    
-    
-    
+
+
     <!--FASE 5-->
-    <br>
     <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-picture">
+        <div class="cd-timeline-img">
+            {{ HTML::image('imagenes/imgIndex/cinco.png','Fase 1', array('class'=>'cd-date'))}}
         </div> <!-- cd-timeline-img -->
 
         <div class="cd-timeline-content text-justify">
@@ -98,9 +101,9 @@
 
 
     <!--FASE 6-->
-    <br>
     <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-location">
+        <div class="cd-timeline-img">
+            {{ HTML::image('imagenes/imgIndex/seis.png','Fase 1', array('class'=>'cd-date'))}}
         </div> <!-- cd-timeline-img -->
 
         <div class="cd-timeline-content">
@@ -116,47 +119,49 @@
 
     <!--FASE 7-->
     <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-picture">
+        <div class="cd-timeline-img">
+            {{ HTML::image('imagenes/imgIndex/siete.png','Fase 1', array('class'=>'cd-date'))}}
         </div> <!-- cd-timeline-img -->
 
         <div class="cd-timeline-content text-justify">
             <h2 class="text-center">Beneficios de participación  </h2>
             <hr>
             <ul>
-                <li>•	Presentación de tu propuesta en la Ciudad de México</li>
+                <li>Presentación de tu propuesta en la Ciudad de México</li>
                 <br>
-                <li>•	Reconocimiento, difusión y visibilidad Iberoamericana </li>
-                <br>                
-                <li>•	Programación especial en los canales de televisión públicos de Iberoamérica </li>
-                <br>                
-                <li>•	Participación y difusión en la Semana de la Televisión Iberoamericana Educativa y Cultural</li>
+                <li>Reconocimiento, difusión y visibilidad Iberoamericana </li>
+                <br>               
+                <li>Programación especial en los canales de televisión públicos de Iberoamérica </li>
+                <br>               
+                <li>Participación y difusión en la Semana de la Televisión Iberoamericana Educativa y Cultural</li>
                 <br><br><br><br>                
             </ul>
             <br><br><br>
             {{ HTML::image('imagenes/imgIndex/7.jpg','Fase 7', array('class'=>'cd-date'))}}
         </div> <!-- cd-timeline-content -->
     </div> <!-- cd-timeline-block --> 
-    
-    
+
+
     <!--FASE 8-->
     <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
+        <div class="cd-timeline-img">
+            {{ HTML::image('imagenes/imgIndex/ocho.png','Fase 1', array('class'=>'cd-date'))}}
         </div> <!-- cd-timeline-img -->
 
         <div class="cd-timeline-content text-justify">
             <h2 class="text-center">Especificaciones de participación  </h2>
             <hr>
             <ul>
-                <li>•	La inscripción y participación de esta convocatoria no tiene ningún costo.</li>
-                <li>•	El formato de la producción es libre. </li>
-                <li>•	No se aceptarán registros con información incompleta</li>
-                <li>•	Cada institución puede participar con una producción por categoría </li>
-                <li>•	La duración de las producciones es de 15 minutos por mínimo y de máximo 120 minutos (incluyendo créditos)</li>                
-                <li>•	La producción debe ser actual, es decir, a partir del 01 de enero de 2013.</li>
-                <li>•	Para participar es necesario aceptar las disposiciones y señalamientos que se estipulen.</li>                
-                <li>•	Se hará uso de imágenes y fragmentos de las producciones para fines exclusivos de promoción y difusión.</li>
-                <li>•	Es responsabilidad de cada participante el contenido que sea enviado para este concurso.</li>
-                <li>•	El paquete gráfico de la producción participante deberá ser creativo y representativo del contenido.</li>
+                <li>La inscripción y participación de esta convocatoria no tiene ningún costo.</li>
+                <li>El formato de la producción es libre. </li>
+                <li>No se aceptarán registros con información incompleta</li>
+                <li>Cada institución puede participar con una producción por categoría </li>
+                <li>La duración de las producciones es de 15 minutos por mínimo y de máximo 120 minutos (incluyendo créditos)</li>                
+                <li>La producción debe ser actual, es decir, a partir del 01 de enero de 2013.</li>
+                <li>Para participar es necesario aceptar las disposiciones y señalamientos que se estipulen.</li>                
+                <li>Se hará uso de imágenes y fragmentos de las producciones para fines exclusivos de promoción y difusión.</li>
+                <li>Es responsabilidad de cada participante el contenido que sea enviado para este concurso.</li>
+                <li>El paquete gráfico de la producción participante deberá ser creativo y representativo del contenido.</li>
             </ul>
             {{ HTML::image('imagenes/imgIndex/8.jpg','Fase 8', array('class'=>'cd-date'))}}
         </div> <!-- cd-timeline-content -->
