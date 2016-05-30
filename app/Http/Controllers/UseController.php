@@ -30,15 +30,15 @@ class UseController extends Controller {
 
 		$this->validate($request, [
 
-			'institucion' => 'required',
-			'pais' => 'required',
+			'institucion' => 'required|max:500',
+			'pais' => 'required|max:45',
 			'direccion' => 'required',
-			'representante' => 'required',
-			'cargo' => 'required',
-			'tel' => 'required|numeric',
-			'correo' => 'required|email|unique:users',
-			'produccion' => 'required',
-			'productor' => 'required',
+			'representante' => 'required|max:150',
+			'cargo' => 'required|max:250',
+			'tel' => 'required|max:20',
+			'correo' => 'required|email|max:200',
+			'produccion' => 'required|max:500',
+			'productor' => 'required|max:150',
 			'tematica' => 'required',
 			'sinopsis' => 'required',
 			'url' => 'required',
@@ -50,16 +50,50 @@ class UseController extends Controller {
 
 		]);
 
-		$file = $request->file('file1');
-		$nombre = $file->getClientOriginalName();
+		$institucion = $request->input('institucion');
+		$pais = $request->input('pais');
+		$direccion = $request->input('direccion');
+		$representante = $request->input('representante');
+		$cargo = $request->input('cargo');
+		$tel = $request->input('tel');
+		$correo = $request->input('correo');
+		$produccion = $request->input('produccion');
+		$productor = $request->input('productor');
+		$tematica = $request->input('tematica')+1;
+		$sinopsis = $request->input('sinopsis');
+		$file1 = $request->file('file1');
+		$file2 = $request->file('file2');
+		$file3 = $request->file('file3');
+		$url = $request->input('url');
 
-		#$id_user= '245sd';
+		$id = DB::table('muestra_registro')->insertGetId(
+    [
+			'institucion' => $institucion,
+			'pais' => $pais,
+			'domicilio' => $direccion,
+			'nombre' => $representante,
+			'cargo' => $cargo,
+			'telefono' => $tel,
+			'correo' => $correo,
+			'nombre_produccion' => $produccion,
+			'nombre_productor' => $productor,
+			'id_tematica' => $tematica,
+			'sinopsis' => $sinopsis,
+			'url' => $url,
 
-		#\Storage::MakeDirectory($id_user);
+			]
+		);
 
-		\Storage::disk('local')->put($nombre, File::get($file));
+		\Storage::MakeDirectory($institucion.'_'.$id);
 
-		//indicamos que queremos guardar un nuevo archivo en el disco local
+		$img1 = $file1->getClientOriginalName();
+		\Storage::disk('local')->put($institucion.'_'.$id.'/'.$img1, File::get($file1));
+
+		$img2 = $file2->getClientOriginalName();
+		\Storage::disk('local')->put($institucion.'_'.$id.'/'.$img2, File::get($file2));
+
+		$img3 = $file3->getClientOriginalName();
+		\Storage::disk('local')->put($institucion.'_'.$id.'/'.$img3, File::get($file3));
 
 
 		return $this->welcome();
