@@ -51,6 +51,9 @@
             <!--<hr class="hrDivide">-->
             @include('viewMuestra.fasesMuestra')
         </div>
+        @include('viewMuestra.innteduMuestra')
+        @include('viewMuestra.widgetMuestra')
+        <br><br>
         @include('viewMuestra.pieMuestra')
     </body>
 </html>
