@@ -1,7 +1,7 @@
 <!--Inicia Index-->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12 pull-right">
+<!--        <div class="col-md-12 pull-right">
             <div class="row mobile-social-share">
                 <div class="col-md-9"></div>
                 <div id="socialHolder" class="col-md-3">
@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-        </div>
+        </div>-->
         <!--Muestra Iberoamericana-->
         <div class="col-md-1"></div>
         <div class="col-md-10 divTrans">

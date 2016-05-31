@@ -19,6 +19,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #000;
     background-color: #e9f0f5;
+    overflow-x: hidden;
 }
 
 a {
@@ -139,22 +140,22 @@ header h1 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img img {
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 60px;
+    height: 60px;
     position: relative;
-    left: 50%;
-    top: 50%;
+    left: 20%;
+    top: 20%;
     margin-left: -12px;
     margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
+/*.cd-timeline-img.cd-picture {
     background: #75ce66;
 }
 .cd-timeline-img.cd-movie {
@@ -162,7 +163,7 @@ header h1 {
 }
 .cd-timeline-img.cd-location {
     background: #f0ca45;
-}
+}*/
 @media only screen and (min-width: 1170px) {
     .cd-timeline-img {
         width: 60px;
@@ -281,7 +282,7 @@ header h1 {
 .cd-timeline-content .cd-date {
     float: left;
     padding: .8em 0;
-    opacity: .7;
+    /*opacity: .7;*/
 }
 .cd-timeline-content::before {
     content: '';
@@ -490,7 +491,7 @@ header h1 {
  text-decoration: none;    
 }
 
-.container-fluid{
+.container-fluid-back{
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed; 
@@ -509,7 +510,7 @@ header h1 {
     font-size: 3em;
 }
 .divTrans{
-    background: rgba(0,0,0,.7);
+    background: rgba(0,0,0,.5);
     padding: 5%;
 }
 .parrafoMuestra{
