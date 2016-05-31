@@ -15,12 +15,12 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">               
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{ asset('css/ihover.css') }}" >
-        <link rel="stylesheet" href="{{ asset('css/animate.css') }}" >        
-        <link rel="stylesheet" href="{{ asset('css/reset.css') }}" > <!-- Timeline -->       
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}" > <!-- Timeline -->  
-        <link rel="stylesheet" href="{{ asset('css/estilos3.css') }}" > <!-- Redes Sociales -->  
+        <link rel="stylesheet" href="{{ asset('css/animate.css') }}" >
+        <link rel="stylesheet" href="{{ asset('css/reset.css') }}" > <!-- Timeline -->
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" > <!-- Timeline -->
+        <link rel="stylesheet" href="{{ asset('css/estilos3.css') }}" > <!-- Redes Sociales -->
 
         <!--CDN FormHelpers-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.css" rel="stylesheet"/>
@@ -28,7 +28,7 @@
         <!--fin FormHelpers -->
 
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        
+
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
@@ -43,17 +43,16 @@
         <script src="{{asset('js/main.js')}}"></script> <!-- Timeline -->
     </head>
     <body>
-        <div class="container-fluid parallax-window"  data-parallax="scroll" style="background-image:url('{{asset('imagenes/imgIndex/back.jpg')}}');">                    
+        <div class="container-fluid parallax-window container-fluid-back"  data-parallax="scroll" style="background-image:url('{{asset('imagenes/imgIndex/back.jpg')}}');">
         <!--<div class="container-fluid parallax-window" data-parallax="scroll" style="background-image:url('http://placehold.it/1200x800');"></div>-->
             @include('viewMuestra.bannerMuestra')
         </div>
-        <div class="container-fluid">            
-            <!--<hr class="hrDivide">-->                 
+        <div class="container-fluid">
+            <!--<hr class="hrDivide">-->
             @include('viewMuestra.fasesMuestra')
-            @include('viewMuestra.pieMuestra')
         </div>
+        @include('viewMuestra.pieMuestra')
     </body>
 </html>
 <script>
-
 </script>
