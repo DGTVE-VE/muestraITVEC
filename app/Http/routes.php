@@ -10,7 +10,9 @@
 |
 */
 
-Route::get('/', 'UseController@welcome');
+Route::auth();
+
+Route::get('/', 'HomeController@index');
 
 Route::post('save', 'UseController@save');
 
@@ -20,3 +22,7 @@ Route::any('registro', 'UseController@registro');
 // Route::get('/', function () {
 //     return view('welcome')
 // });
+
+
+
+// Route::get('/home', 'HomeController@index');

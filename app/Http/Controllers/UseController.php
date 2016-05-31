@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 use DB;
 use File;
+use App\Http\Requests;
 use Illuminate\Http\Request;
 
 class UseController extends Controller {
 
 	public function __construct()
 	{
+		  $this->middleware('auth');
 	}
 
 	public function welcome(){
