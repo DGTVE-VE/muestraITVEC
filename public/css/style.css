@@ -499,7 +499,7 @@ header h1 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: auto;
+    height: 100%;
 }
 
 .title {
