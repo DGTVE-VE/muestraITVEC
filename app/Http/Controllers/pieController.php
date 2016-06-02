@@ -21,7 +21,7 @@ class pieController extends Controller {
 
 		/*$guardaDatos = DB::table('muestra_contacto')->insert(['nombre_contacto'=>$_POST['nombre_contacto'],
 						'correo'=>$_POST['correo'],'asunto'=>$_POST['asunto'],'mensaje'=>$_POST['mensaje']]);*/
-		
+		$guardaDatos = "1";
 		//$correo = $_POST['correo'];
 		$correo = 'mitec@televisioneducativa.gob.mx';
 		$hash = md5(date('Y/m/d H:i:s'));
