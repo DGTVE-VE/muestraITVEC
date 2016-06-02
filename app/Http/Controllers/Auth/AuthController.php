@@ -3,10 +3,15 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use DB;
 use Validator;
+use Mail;
+use Session;
+use Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+
 
 class AuthController extends Controller
 {
@@ -37,7 +42,9 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+
+      $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+
     }
 
     /**
@@ -67,20 +74,55 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
+        $hash = md5(date('Y/m/d H:i:s'));
+        $this->enviamail($data['email'], $hash);
+
+
         return User::create([
             'name' => $data['name'],
             'genero' => $data['genero'],
-            'nacimineto' => $data['nacimiento'],
+            'nacimiento' => $data['nacimiento'],
             'ciudad' => $data['ciudad'],
             'pais' => $data['pais'],
-            'intereses_edu' => $data['intereses_edu'],
             'nickname' => $data['nickname'],
-            'is_researcher' => $data['is_researcher'],
             'is_parent' => $data['is_parent'],
             'is_teacher' => $data['is_teacher'],
             'is_student' => $data['is_student'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'hash' =>  $hash,
         ]);
-    }
+
+      }
+
+      protected function enviamail($correo, $hash){
+      
+
+          Mail::send('viewMail/mailActivacion', ['correo' => $correo, 'hash' => $hash], function ($m) use ($correo) {
+              $m->from('mitec@televisioneducativa.gob.mx', 'Muestra Iberoamericana');
+              $m->to($correo)->subject('Activación de correo!');
+          });
+          return redirect('viewMail/correoValidado');
+
+      }
+
+      protected function activaCorreo(Request $request, $correo, $hash) {
+
+          $news = \App\User::where('email', '=', $correo)->first();
+
+          if ($news->hash == $hash) {
+              $news->activo = 1;
+              $news->save();
+              return redirect('viewMail/correoValidado');
+          } else {
+              print 'error';
+          }
+      }
+
+      protected function activado() {
+
+          return view('viewMail/correoValidado');
+
+      }
+
 }

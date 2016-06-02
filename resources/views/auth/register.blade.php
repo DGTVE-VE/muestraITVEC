@@ -77,28 +77,6 @@
               </div>
             </div>
 
-            <div class="form-group{{ $errors->has('intereses_edu') ? ' has-error' : '' }}">
-              <label for="intereses_edu" class="col-md-4 control-label">Intereses Educativos</label>
-
-              <div class="col-md-6">
-                <input id="intereses_edu" type="text" class="form-control" name="intereses_edu" value="{{ old('intereses_edu') }}" required>
-
-                @if ($errors->has('intereses_edu'))
-                <span class="help-block">
-                  <strong>{{ $errors->first('intereses_edu') }}</strong>
-                </span>
-                @endif
-              </div>
-            </div>
-
-            <div class="form-group{{ $errors->has('is_researcher') ? ' has-error' : '' }}">
-              <label for="is_researcher" class="col-md-4 control-label">Investigador</label>
-              <div class="col-md-6">
-                <input id="is_researcher" type="radio"  name="is_researcher" value="1" required>Si
-                <input id="is_researcher" type="radio"  name="is_researcher" value="0" checked required>No
-              </div>
-            </div>
-
             <div class="form-group{{ $errors->has('is_parent') ? ' has-error' : '' }}">
               <label for="is_parent" class="col-md-4 control-label">Padre de familia</label>
               <div class="col-md-6">

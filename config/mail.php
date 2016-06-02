@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'mitec@televisioneducativa.gob.mx', 'name' => 'Red Mesoamericana'],
+      'from' => ['address' => 'redmite@televisioneducativa.gob.mx', 'name' => 'Red Mesoamericana'],
 
     /*
     |--------------------------------------------------------------------------
@@ -68,7 +68,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
+    'encryption' => env('MAIL_ENCRYPTION', 'sls'),
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    'username' => env('redmite@televisioneducativa.gob.mx'),
 
     /*
     |--------------------------------------------------------------------------
@@ -94,7 +94,7 @@ return [
     |
     */
 
-    'password' => env('MAIL_PASSWORD'),
+    'password' => env('9EIc9PlMCn'),
 
     /*
     |--------------------------------------------------------------------------

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use DB;
+use Mail;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -26,4 +28,6 @@ class HomeController extends Controller
     {
         return view('welcome');
     }
+
+
 }

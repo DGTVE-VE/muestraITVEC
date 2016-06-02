@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <!--Registro de Convocatoria-->
 <!DOCTYPE html>
 <html>
@@ -82,3 +85,4 @@
 
 </body>
 </html>
+@endsection
