@@ -18,6 +18,8 @@ Route::post('save', 'UseController@save');
 
 Route::any('registro', 'UseController@registro');
 
+Route::post('guardaContacto', 'pieController@guardaContacto');
+
 //Se cambio al controlador para poder acceder al la base de datos
 // Route::get('/', function () {
 //     return view('welcome')
