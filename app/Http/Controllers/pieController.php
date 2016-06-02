@@ -19,8 +19,8 @@ class pieController extends Controller {
 
 	public function guardaContacto(){
 
-		$guardaDatos = DB::table('muestra_contacto')->insert(['nombre_contacto'=>$_POST['nombre_contacto'],
-						'correo'=>$_POST['correo'],'asunto'=>$_POST['asunto'],'mensaje'=>$_POST['mensaje']]);
+		/*$guardaDatos = DB::table('muestra_contacto')->insert(['nombre_contacto'=>$_POST['nombre_contacto'],
+						'correo'=>$_POST['correo'],'asunto'=>$_POST['asunto'],'mensaje'=>$_POST['mensaje']]);*/
 		
 		//$correo = $_POST['correo'];
 		$correo = 'renecrapaud@gmail.com';
