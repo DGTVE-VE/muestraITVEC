@@ -96,16 +96,7 @@ class AuthController extends Controller
       }
 
       protected function enviamail($correo, $hash){
-        #$correo = "jorgeomarmh@gmail.com";
-        #$hash = "f15da72cb94dd31add8e1daa6d65b68e";
-        print_r("Hola");
-
-        #$hash = DB::table('users')->whereemail($correo)->get();
-        #$user = User::where('email', '=', $correo)->first();
-        #print_r($user);
-        print_r($hash);
-
-        #$hash = $user->hash;
+      
 
           Mail::send('viewMail/mailActivacion', ['correo' => $correo, 'hash' => $hash], function ($m) use ($correo) {
               $m->from('mitec@televisioneducativa.gob.mx', 'Muestra Iberoamericana');
