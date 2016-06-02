@@ -54,9 +54,10 @@
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-4">
-                        <div class="text-center btn_concurso animated bounceInRight">
-                            <h3>El registro se habilitará a partir del 20 de Junio</h3>
-                            <!--<i class="fa fa-angle-double-down flechaBtn" aria-hidden="true"></i>-->
+                        <div class="text-center animated bounceInRight">
+                            <h3 class="btn_concurso">Regístrate</h3>
+                            <label style="margin-top: -10%; color: white;">Se habilitará a partir del 20 de Junio</label>
+                            <i class="fa fa-angle-double-down flechaBtn" aria-hidden="true"></i>
                         </div>
                 </div>
                 <div class="col-md-1"></div>                    
