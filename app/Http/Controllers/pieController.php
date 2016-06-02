@@ -24,8 +24,8 @@ class pieController extends Controller {
 		
 		//$correo = $_POST['correo'];
 		$correo = 'renecrapaud@gmail.com';
-		//$hash = md5(date('Y/m/d H:i:s')); , 'hash' => $hash
-		Mail::send('viewMuestra.mailActivacion', ['correo' => $correo], function ($m) use ($correo) {
+		$hash = md5(date('Y/m/d H:i:s'));
+		Mail::send('viewMuestra.mailActivacion', ['correo' => $correo, 'hash' => $hash], function ($m) use ($correo) {
             $m->from('mitec@televisioneducativa.gob.mx', 'Red Mesoamericana');
             $m->to($correo)->subject('Comentarios Recibidos');
         });
