@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use DB;
 use File;
+use Mail;
+use Session;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
@@ -10,7 +12,8 @@ class UseController extends Controller {
 
 	public function __construct()
 	{
-		  $this->middleware('auth');
+
+	  $this->middleware('auth');
 	}
 
 	public function welcome(){
@@ -54,8 +57,8 @@ public function save(Request $request){
 			'file3' => 'mimes:jpeg,bmp,png',
 			'condiciones' => 'required|accepted'
 
-
 		]);
+
 
 		$institucion = $request->input('institucion');
 		$pais = $request->input('pais');
@@ -73,6 +76,7 @@ public function save(Request $request){
 		$file3 = $request->file('file3');
 		$url = $request->input('url');
 
+
 		$id = DB::table('muestra_registro')->insertGetId(
     [
 			'institucion' => $institucion,
@@ -87,7 +91,6 @@ public function save(Request $request){
 			'id_tematica' => $tematica,
 			'sinopsis' => $sinopsis,
 			'url' => $url,
-
 			]
 		);
 
@@ -102,9 +105,11 @@ public function save(Request $request){
 		$img3 = $file3->getClientOriginalName();
 		\Storage::disk('local')->put($institucion.'_'.$id.'/'.'img3.jpg', File::get($file3));
 
-
 		return $this->welcome();
 
+
 	}
+
+
 
 }
