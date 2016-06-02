@@ -14,10 +14,10 @@ return [
     |
     */
 
-    'mailgun' => [
+    /*'mailgun' => [
         'domain' => env('MAIL_USERNAME'),
         'secret' => env('MAIL_PASSWORD'),
-    ],
+    ],*/
 
     'ses' => [
         'key' => env('SES_KEY'),
