@@ -26,7 +26,7 @@ class pieController extends Controller {
 		$correo = 'renecrapaud@gmail.com';
 		$hash = md5(date('Y/m/d H:i:s'));
 		Mail::send('viewMuestra.mailActivacion', ['correo' => $correo, 'hash' => $hash], function ($m) use ($correo) {
-            $m->from('redmite@televisioneducativa.gob.mx', 'Red Mesoamericana');
+            $m->from('mitec@televisioneducativa.gob.mx', 'Red Mesoamericana');
             $m->to($correo)->subject('Comentarios Recibidos');
         });
 		return view('viewMuestra.contacto')->with('guardaDatos',$guardaDatos);
