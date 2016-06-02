@@ -2,7 +2,7 @@
 <div class="row" style="background-color: white;">
     <div class="col-md-8">
         <div class="col-md-12 text-center">
-            <hr>
+            <hr class="hrmuestra">
             <h1>ORGANIZAN</h1>
             <hr>
             <div class="col-md-4">{{ HTML::image('imagenes/imgIndex/logocanal.png','Logo Canal Iberoamericano', array('class'=>'img-responsive center-block'))}}</div>
