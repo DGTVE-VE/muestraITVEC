@@ -530,7 +530,14 @@ header h1 {
     background-color: rgba(255,255,255,.7);
     color: black;
     z-index: 15;
-}   
+} 
+
+.btn_concurso2{
+    color: white;
+    position: relative;
+    font-size: 15px;
+}
+
 .flechaBtn{
     font-size: 1em;    
 }
