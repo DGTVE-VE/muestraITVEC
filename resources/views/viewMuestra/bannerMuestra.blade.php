@@ -44,7 +44,7 @@
             <div class="col-md-12">
                 <div class="col-md-2"></div>
                 <div class="col-md-4">
-                    <a href="{{url('convocatoria/concova.pdf')}}"  target="_blank" class="nounderline">
+                    <a href="#"  target="_blank" class="nounderline">
                         <div class="text-center btn_concurso animated bounceInLeft">
                             <br>
                             <h3>Descarga las bases</h3>
@@ -54,10 +54,8 @@
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-4">
-                        <div class="text-center animated bounceInRight">
-                            <h3 class="btn_concurso">Regístrate</h3>
-                            <label style="margin-top: -10%; color: white;">Se habilitará a partir del 20 de Junio</label>
-                            <i class="fa fa-angle-double-down flechaBtn" aria-hidden="true"></i>
+                        <div class="text-center animated bounceInRight">                            
+                            <h3 class="btn_concurso"><br>Regístrate<label class="btn_concurso2">Se habilitará a partir del 20 de junio</label></h3>                                                                                    
                         </div>
                 </div>
                 <div class="col-md-1"></div>                    
