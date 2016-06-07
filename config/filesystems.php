@@ -45,7 +45,7 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => public_path('imagenes/imagenmuestra'),
+            'root' => public_path('imagenes/educaplay/categorias/2/serie/'),
         ],
 
         'public' => [

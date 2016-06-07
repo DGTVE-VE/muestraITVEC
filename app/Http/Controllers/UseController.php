@@ -22,14 +22,15 @@ class UseController extends Controller {
 	}
 
 	public function registro(){
+		$email = \Auth::user() -> email;
 
-		$tema = DB::table('muestra_tematica')->get();
+		$tema = DB::table('edu_clasificaciones')->get();
 
 		$tematica = array();
 		$i=0;
 
 		foreach ($tema as $key => $value) {
-			$tematica[$i] = $value->tematica;
+			$tematica[$i] = $value->clasifica;
 			$i++;
 		}
 
@@ -52,11 +53,13 @@ public function save(Request $request){
 			'tematica' => 'required',
 			'sinopsis' => 'required',
 			'url' => 'required',
-			'file1' => 'mimes:jpeg,bmp,png',
-			'file2' => 'mimes:jpeg,bmp,png',
-			'file3' => 'mimes:jpeg,bmp,png',
-			'condiciones' => 'required|accepted'
+			'file1' => 'required|mimes:jpeg',
+			'file2' => 'required|mimes:jpeg',
+			'file3' => 'required|mimes:jpeg',
+			'condiciones' => 'required|accepted',
+			
 
+			// 'file2' => 'mimes:jpeg,bmp,png',
 		]);
 
 
@@ -88,28 +91,64 @@ public function save(Request $request){
 			'correo' => $correo,
 			'nombre_produccion' => $produccion,
 			'nombre_productor' => $productor,
-			'id_tematica' => $tematica,
+			'clasifica_id' => $tematica,
 			'sinopsis' => $sinopsis,
 			'url' => $url,
 			]
 		);
 
-		\Storage::MakeDirectory($institucion.'_'.$id);
+		$idSerie = DB::table('edu_serie')->insertGetId([
+
+			'titulo_serie' => $produccion,
+			'temporadas_total' => '1',
+			'categoria_id' => '2',
+			'clasificacion_id' => $tematica,
+			'descripcion' => $sinopsis,
+
+		]);
+
+		\Storage::MakeDirectory($idSerie);
 
 		$img1 = $file1->getClientOriginalName();
-		\Storage::disk('local')->put($institucion.'_'.$id.'/'.'img1.jpg', File::get($file1));
+		$route1 = \Storage::disk('local')->put($idSerie.'/'.'banner.jpg', File::get($file1));
 
 		$img2 = $file2->getClientOriginalName();
-		\Storage::disk('local')->put($institucion.'_'.$id.'/'.'img2.jpg', File::get($file2));
+		$route2 = \Storage::disk('local')->put($idSerie.'/'.'v1.jpg', File::get($file2));
 
 		$img3 = $file3->getClientOriginalName();
-		\Storage::disk('local')->put($institucion.'_'.$id.'/'.'img3.jpg', File::get($file3));
+		$route3 = \Storage::disk('local')->put($idSerie.'/'.'h1.jpg', File::get($file3));
+
+
+
+
+
+		DB::table('edu_imagen')->insert([
+
+			'url' => 'imagenes/educaplay/categorias/2/series/'.$idSerie.'/'.'img1.jpg',
+    	'ubicacion_id' => '1',
+			'serie_id' => $idSerie,
+
+]);
+		DB::table('edu_imagen')->insert([
+
+    	'url' => 'imagenes/educaplay/categorias/2/series/'.$idSerie.'/'.'img2.jpg',
+    	'ubicacion_id' => '2',
+			'serie_id' => $idSerie,
+
+
+]);
+		DB::table('edu_imagen')->insert([
+
+			'url' => 'imagenes/educaplay/categorias/2/series/'.$idSerie.'/'.'img3.jpg',
+    	'ubicacion_id' => '3',
+			'serie_id' => $idSerie,
+
+]);
+
 
 		return $this->welcome();
 
 
 	}
-
-
 
 }
