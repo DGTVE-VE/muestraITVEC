@@ -142,15 +142,26 @@
 
       <div class="col-lg-6 centered">
         <a href="#">Términos y condiciones</a>
-        {!! BootForm::checkbox('condiciones', 'Acepto los términos y condiciones') !!}
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="condiciones" required> Acepto los términos y condiciones
+          </label>
+        </div>
         <br>
       </div>
+
       <div class="col-lg-6 centered">
         <a href="#">Carta de cesión de derechos</a>
-        {!! BootForm::checkbox('derechos', 'Acepto la carta de cesión de derechos') !!}
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="derechos" required> Acepto la carta de cesión de derechos
+          </label>
+        </div>
         <br>
       </div>
+
       <div class="col-lg-12 centered">
+
         <a href="{{url ('/')}}" class="btn btn-danger btn-lg">Regresar a la convocatoria</a>
         <button type="submit" class="btn btn-success btn-lg">Registrar la muestra</button>
 
