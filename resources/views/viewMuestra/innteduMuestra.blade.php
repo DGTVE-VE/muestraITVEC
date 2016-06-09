@@ -2,7 +2,7 @@
     <div class="col-md-12">
         <center>
             <br>
-            {{ HTML::image('imagenes/imgIndex/logoinntedu.png','Logo Muestra Iberoamericana', array('class'=>'cd-date'))}}
+            {{ HTML::image('imagenes/imgIndex/inntedu.png','Logo Muestra Iberoamericana', array('class'=>'cd-date'))}}
             <br><br>
         </center>
     </div>
