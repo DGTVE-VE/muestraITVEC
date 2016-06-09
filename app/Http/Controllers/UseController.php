@@ -7,6 +7,7 @@ use Mail;
 use Session;
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Validation\Validator;
 
 class UseController extends Controller {
 
