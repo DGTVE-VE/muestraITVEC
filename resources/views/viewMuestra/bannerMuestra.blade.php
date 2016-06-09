@@ -46,9 +46,8 @@
                 <div class="col-md-4">
                     <a href="#"  target="_blank" class="nounderline">
                         <div class="text-center btn_concurso animated bounceInLeft">
-                            <br>
+                            <i class="fa fa-download" aria-hidden="true"></i>
                             <h3>Descarga las bases</h3>
-                           <i class="fa fa-download" aria-hidden="true"></i>
                         </div>
                     </a>
                 </div>
