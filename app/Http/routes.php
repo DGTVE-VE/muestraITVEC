@@ -10,7 +10,7 @@
 |
 */
 
-Route::auth();
+// Route::auth();
 
 Route::get('/', 'HomeController@index');
 
@@ -19,11 +19,11 @@ Route::post('save', 'UseController@save');
 Route::any('registro', 'UseController@registro');
 
 
-Route::get('viewMail/activaCorreo/{correo}/{hash}', 'Auth\AuthController@activaCorreo');
-
-Route::get('viewMail/correoValidado', 'Auth\AuthController@activado');
-
-Route::get('enviamail', 'UseController@enviamail');
+// Route::get('viewMail/activaCorreo/{correo}/{hash}', 'Auth\AuthController@activaCorreo');
+//
+// Route::get('viewMail/correoValidado', 'Auth\AuthController@activado');
+//
+// Route::get('enviamail', 'UseController@enviamail');
 
 Route::post('guardaContacto', 'pieController@guardaContacto');
 

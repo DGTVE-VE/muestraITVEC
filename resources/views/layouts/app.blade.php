@@ -23,6 +23,10 @@
         .fa-btn {
             margin-right: 6px;
         }
+        .navbar{
+          height: 5px;
+          margin-bottom
+        }
     </style>
 </head>
 <body id="app-layout">
