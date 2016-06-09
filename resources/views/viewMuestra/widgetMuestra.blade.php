@@ -22,9 +22,15 @@
         <div class="col-md-12">
             <!-- Facebook Badge START -->
             <br />
-            <a href="https://www.facebook.com/canal.iberoamericano" title="Canal Iberoamericano" target="_TOP">
-                <img class="img" src="https://badge.facebook.com/badge/100009195538194.11066.1813127004.png" style="border: 0px;" alt="" />
-            </a>
+            <div class="fb-page" data-href="https://www.facebook.com/CanaI.iberoamericano/" data-tabs="timeline" data-width="474" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/CanaI.iberoamericano/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/CanaI.iberoamericano/">Canal Iberoamericano</a></blockquote></div>
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.6";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
             <!-- Facebook Badge END -->
         </div>      
         <div class="col-md-12">
