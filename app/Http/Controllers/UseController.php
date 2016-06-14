@@ -157,29 +157,4 @@ public function save(Request $request){
 
 	}
 
-	public function votacion(){
-			// $email = \Auth::user() -> email;
-
-			$n_votos = DB::table('muestra_votacion')->whereemail($email)->count();
-
-			if($n_votos < 5){
-
-				$id_usuario = DB::table('users')->whereemail($email)->get();
-
-				$id_muestra = 0;
-
-				DB::table('muestra_votacion')->insert([
-					'muestra_id' => $id_muestra,
-					'user_id' => $id_usuario,
-				]);
-
-	return 1;
-
-}
-else {
-	return 0;
-}
-
-	}
-
 }
