@@ -27,7 +27,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css" rel="stylesheet"/>
         <!--fin FormHelpers -->
 
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
 
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -51,9 +51,9 @@
             <!--<hr class="hrDivide">-->
             @include('viewMuestra.fasesMuestra')
         </div>
+        @include('viewMuestra.widgetMuestra')        
         @include('viewMuestra.innteduMuestra')
-        @include('viewMuestra.widgetMuestra')
-        <br><br>
+       
         @include('viewMuestra.pieMuestra')
     </body>
 </html>

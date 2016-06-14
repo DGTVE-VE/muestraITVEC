@@ -6,6 +6,7 @@ Primary style
 html * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: 'Roboto', sans-serif;
 }
 
 *, *:after, *:before {
@@ -18,7 +19,8 @@ body {
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
     color: #000;
-    background-color: #e9f0f5;
+/*    background-color: #e9f0f5;*/
+    background-color: white;
     overflow-x: hidden;
 }
 
@@ -48,25 +50,19 @@ Modules - reusable parts of our design
     max-width: 1170px;
     margin: 0 auto;
 }
-.cd-container::after {
-    /* clearfix */
-    content: '';
-    display: table;
-    clear: both;
-}
 
 /* -------------------------------- 
 
 Main components 
 
 -------------------------------- */
-header {
+/*header {
     height: 200px;
     line-height: 200px;
     text-align: center;
     background: #303e49;
-}
-header h1 {
+}*/
+/*header h1 {
     color: white;
     font-size: 18px;
     font-size: 1.125rem;
@@ -80,7 +76,7 @@ header h1 {
         font-size: 24px;
         font-size: 1.5rem;
     }
-}
+}*/
 
 #cd-timeline {
     position: relative;
@@ -88,8 +84,8 @@ header h1 {
     margin-top: 2em;
     margin-bottom: 2em;
 }
-#cd-timeline::before {
-    /* this is the vertical line */
+/*#cd-timeline::before {
+     this is the vertical line 
     content: '';
     position: absolute;
     top: 0;
@@ -97,7 +93,7 @@ header h1 {
     height: 100%;
     width: 4px;
     background: #d7e4ed;
-}
+}*/
 @media only screen and (min-width: 1170px) {
     #cd-timeline {
         margin-top: 3em;
@@ -248,12 +244,13 @@ header h1 {
     background: white;
     border-radius: 0.25em;
     padding: 1em;
-    box-shadow: 0 3px 0 #d7e4ed;
+    /*box-shadow: 0 3px 0 #d7e4ed;*/
 }
 .cd-timeline-content:after {
     content: "";
     display: table;
     clear: both;
+       box-shadow: 0 3px 0 #d7e4ed;
 }
 .cd-timeline-content h2 {
     color: #303e49;
@@ -261,6 +258,7 @@ header h1 {
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 13px;
     font-size: 0.8125rem;
+    
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     display: inline-block;
@@ -511,31 +509,20 @@ header h1 {
 }
 .divTrans{
     background: rgba(0,0,0,.5);
-    padding: 5%;
+    padding: 3%;
 }
 .parrafoMuestra{
     font-size: 20px;
     color: white;
+    line-height: 1.2;
 }
 .btn_concurso{
-    background: rgba(0,0,0,.7);
     height: 130px;
     color: white;
-    margin-top: 10%;
+    margin-top: 25%;
     padding: 5%;
     font-size: 2em;
     position: relative;
-}
-.btn_concurso:hover{
-    background-color: rgba(255,255,255,.7);
-    color: black;
-    z-index: 15;
-} 
-
-.btn_concurso2{
-    color: white;
-    position: relative;
-    font-size: 15px;
 }
 
 .flechaBtn{
@@ -558,4 +545,33 @@ header h1 {
 .hrmuestra{
   border: 0 !important
    
+}
+
+
+
+.titulofases{
+    font-size: 25px;
+}
+
+.fase1{color: #B3FF17;}
+.fase2{color: #C9CACE;}
+.fase3{color: #0283C7;}
+.fase4{color: #e38f12;}
+.fase5{color: #e72875;}
+.fase6{color: #f6d50a;}
+.fase7{color: #929197;}
+.fase8{color: #a00701;}
+.interlinInteddu{
+    line-height: 1.5;
+}
+.textinntedu{
+    font-size: 17px;
+}
+.textBlanco{
+    color: white;
+}
+
+.hrorganizan{
+    border: 2px solid #acb7c0;
+    width: 90%;
 }
