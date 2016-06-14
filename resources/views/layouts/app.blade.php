@@ -25,7 +25,6 @@
         }
         .navbar{
           height: 5px;
-          margin-bottom
         }
     </style>
 </head>
