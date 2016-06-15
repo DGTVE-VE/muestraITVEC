@@ -15,8 +15,14 @@
         <meta property="og:url"                content="http://muestraiberoamericana.tv/" />
         <meta property="og:type"               content="article" />
         <!--<meta property="og:title"              content="Luis Sassón probando la aplicación" />-->
-        <meta property="og:description"        content="Aquí va la descripción" />
-        <meta property="og:image"              content="http://americanfootballfilms.com/wp-content/uploads/2013/10/200089259.jpg" />
+        <meta property="og:description"        content="La Muestra Iberoamericana de Televisión Educativa y Cultural 2016 
+                                                        es un evento organizado por la DGTVE de México en coordinación con 
+                                                        la Asociación de Televisión Educativa Iberoamericana, que se realizará 
+                                                        los próximos 12 y 13 de octubre en el Auditorio “Blas Galindo” del
+                                                        Centro Nacional de las Artes, Ciudad de México, en el marco del
+                                                        Primer Encuentro Internacional de Innovación y Tecnología para la Educación, 
+                                                        2016 (INNTEDU)." />
+        <meta property="og:image"              content="http://muestraiberoamericana.tv/imagenes/imgIndex/xinntedu.png.pagespeed.ic.lurRAFwptZ.png" />
 
         <link rel="shortcut icon" href="{{ asset('mitec.ico') }}" >
 
