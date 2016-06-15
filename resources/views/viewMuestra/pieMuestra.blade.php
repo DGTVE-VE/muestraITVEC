@@ -28,16 +28,7 @@
             <div class="col-md-12 text-center">
                 <a data-original-title="Twitter" rel="tooltip"  href="#" class="btn btn-twitter over-logo">
                     <i class="fa fa-twitter fa-2x"></i>
-                </a>
-                <a data-original-title="Facebook" rel="tooltip" class="btn btn-facebook" data-share="true">
-                    <i class="fa fa-facebook fa-2x" data-share="true"></i>
-                </a>
-                <!--                <div
-                                    class="fb-like"
-                                    data-share="true"
-                                    data-width="450"
-                                    data-show-faces="true">
-                                </div>-->
+                </a>               
                 <div 
                     class="fb-share-button" 
                     data-layout="button" 
