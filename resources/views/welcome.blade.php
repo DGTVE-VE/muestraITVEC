@@ -17,12 +17,11 @@
         <!--<meta property="og:title"              content="Luis Sassón probando la aplicación" />-->
         <meta property="og:description"        content="La Muestra Iberoamericana de Televisión Educativa y Cultural 2016 
                                                         es un evento organizado por la DGTVE de México en coordinación con 
-                                                        la Asociación de Televisión Educativa Iberoamericana, que se realizará 
-                                                        los próximos 12 y 13 de octubre en el Auditorio “Blas Galindo” del
-                                                        Centro Nacional de las Artes, Ciudad de México, en el marco del
-                                                        Primer Encuentro Internacional de Innovación y Tecnología para la Educación, 
-                                                        2016 (INNTEDU)." />
-        <meta property="og:image"              content="http://muestraiberoamericana.tv/imagenes/imgIndex/xinntedu.png.pagespeed.ic.lurRAFwptZ.png" />
+                                                        la Asociación de Televisión Educativa Iberoamericana, Dicho evento tiene como objetivo
+                                                        otorgar un reconocimiento a la mejor producción televisiva educativa o cultural iberoamericana,
+                                                        por lo que se convoca a participar a los medios públicos y privados interesados en presentar
+                                                        sus mejores contenidos." />
+        <meta property="og:image"              content="http://muestraiberoamericana.tv/imagenes/imgIndex/Logo%20MITEC.png" />
 
         <link rel="shortcut icon" href="{{ asset('mitec.ico') }}" >
 
