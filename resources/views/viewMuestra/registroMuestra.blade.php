@@ -140,21 +140,11 @@
         <br>
       </div>
 
-      <div class="col-lg-6 centered">
+      <div class="col-lg-12 centered">
         <a href="#">Términos y condiciones</a>
         <div class="checkbox">
           <label>
             <input type="checkbox" name="condiciones" required> Acepto los términos y condiciones
-          </label>
-        </div>
-        <br>
-      </div>
-
-      <div class="col-lg-6 centered">
-        <a href="#">Carta de cesión de derechos</a>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" name="derechos" required> Acepto la carta de cesión de derechos
           </label>
         </div>
         <br>

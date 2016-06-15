@@ -63,7 +63,7 @@ public function save(Request $request){
 			'imagen3' => 'required|mimes:jpeg',
 			'url' => 'required',
 			'condiciones' => 'required|accepted',
-			'derechos' => 'required|accepted',
+			// 'derechos' => 'required|accepted',
 
 			// 'file2' => 'mimes:jpeg,bmp,png',
 		]);
