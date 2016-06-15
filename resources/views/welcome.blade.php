@@ -10,6 +10,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
+        <!--facebook metas-->
+
+        <meta property="og:url"                content="http://muestraiberoamericana.tv/" />
+        <meta property="og:type"               content="article" />
+        <!--<meta property="og:title"              content="Luis Sassón probando la aplicación" />-->
+        <meta property="og:description"        content="Aquí va la descripción" />
+        <meta property="og:image"              content="http://americanfootballfilms.com/wp-content/uploads/2013/10/200089259.jpg" />
+
         <link rel="shortcut icon" href="{{ asset('mitec.ico') }}" >
 
         <!-- Latest compiled and minified CSS -->
@@ -44,7 +52,7 @@
     </head>
     <body>
         <div class="container-fluid parallax-window container-fluid-back"  data-parallax="scroll" style="background-image:url('{{asset('imagenes/imgIndex/back.jpg')}}');">
-        <!--<div class="container-fluid parallax-window" data-parallax="scroll" style="background-image:url('http://placehold.it/1200x800');"></div>-->
+            <!--<div class="container-fluid parallax-window" data-parallax="scroll" style="background-image:url('http://placehold.it/1200x800');"></div>-->
             @include('viewMuestra.bannerMuestra')
         </div>
         <div class="container-fluid">
@@ -53,7 +61,7 @@
         </div>
         @include('viewMuestra.widgetMuestra')        
         @include('viewMuestra.innteduMuestra')
-       
+
         @include('viewMuestra.pieMuestra')
     </body>
 </html>

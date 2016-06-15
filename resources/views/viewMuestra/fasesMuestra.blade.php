@@ -3,7 +3,7 @@
     <br><br>
     <h1 class="titulofases">FASES DEL CONCURSO</h1>
 </div>
-<section id="cd-timeline" class="cd-container">
+<section id="cd-timeline" class="cd-container">        
 
     <!--FASE 1-->
     <div class="cd-timeline-block">
@@ -75,10 +75,10 @@
             <h1 class="text-center titulofases fase4 text-uppercase">RESUMEN DE PRODUCCIONES FINALISTAS</h1>
             <hr>
             <p>Las producciones finalistas tendrán que enviar una versión resumida de su
-            proyecto participante, la cual deberá tener una duración de máximo 15 minutos. La
-            fecha de envío será a más tardar el 3 de octubre (hasta las 23:59 horas del centro
-            de México). Las especificaciones serán enviadas a los correos electrónicos
-            registrados.</p>
+                proyecto participante, la cual deberá tener una duración de máximo 15 minutos. La
+                fecha de envío será a más tardar el 3 de octubre (hasta las 23:59 horas del centro
+                de México). Las especificaciones serán enviadas a los correos electrónicos
+                registrados.</p>
             <br>
             <p>En caso de no cumplir con alguna de las especificaciones mencionadas, el
                 proyecto será descalificado.</p>          
@@ -110,7 +110,7 @@
                     interactividad y alineación la categoría en la que se encuentre inscrita la
                     producción.</li>
             </ul><br><br>
-        </p>
+            </p>
             {{ HTML::image('imagenes/imgIndex/5.jpg','Fase 5', array('class'=>'cd-date'))}}
         </div> <!-- cd-timeline-content -->
     </div> <!-- cd-timeline-block -->    
