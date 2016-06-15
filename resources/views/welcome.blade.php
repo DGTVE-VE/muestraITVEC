@@ -14,7 +14,7 @@
 
         <meta property="og:url"                content="http://muestraiberoamericana.tv/" />
         <meta property="og:type"               content="article" />
-        <!--<meta property="og:title"              content="Luis Sassón probando la aplicación" />-->
+        <meta property="og:title"              content="Luis Sassón probando la aplicación" />
         <meta property="og:description"        content="La Muestra Iberoamericana de Televisión Educativa y Cultural 2016 
                                                         es un evento organizado por la DGTVE de México en coordinación con 
                                                         la Asociación de Televisión Educativa Iberoamericana, Dicho evento tiene como objetivo
