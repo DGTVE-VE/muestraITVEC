@@ -2,7 +2,7 @@
 <div class="divider text-center" id="fases">
     <br><br>
     <h1 class="titulofases">FASES DEL CONCURSO</h1>
-                {{ HTML::image('imagenes/imgIndex/Logo MITEC.png','LOGO MITEC')}}
+                {{ HTML::image('imagenes/imgIndex/Logo MITEC.png','LOGO MITEC', array('style'=>'display:none'))}}
 </div>
 <section id="cd-timeline" class="cd-container">        
 
