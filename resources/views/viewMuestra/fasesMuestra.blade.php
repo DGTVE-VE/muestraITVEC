@@ -3,7 +3,7 @@
     <br><br>
     <h1 class="titulofases">FASES DEL CONCURSO</h1>
         <!--imagen oculta solo se usa para el compartir de facebook-->
-    {{ HTML::image('imagenes/imgIndex/logoMitec.jpg','LOGO MITEC')}}
+    {{ HTML::image('imagenes/imgIndex/logoMitec.jpg','LOGO MITEC', array('style'=>'display:none'))}}
 </div>
 <section id="cd-timeline" class="cd-container">        
 
