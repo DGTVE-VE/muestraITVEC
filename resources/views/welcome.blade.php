@@ -14,14 +14,14 @@
 
         <meta property="og:url"                content="http://muestraiberoamericana.tv/" />
         <meta property="og:type"               content="article" />
-        <!--<meta property="og:title"              content="Luis Sassón probando la aplicación" />-->
+        <meta property="og:title"              content="Muestra Iberoamericana de Televisión Educativa y cultural" />
         <meta property="og:description"        content="La Muestra Iberoamericana de Televisión Educativa y Cultural 2016 
                                                         es un evento organizado por la DGTVE de México en coordinación con 
                                                         la Asociación de Televisión Educativa Iberoamericana, Dicho evento tiene como objetivo
                                                         otorgar un reconocimiento a la mejor producción televisiva educativa o cultural iberoamericana,
                                                         por lo que se convoca a participar a los medios públicos y privados interesados en presentar
                                                         sus mejores contenidos." />
-        <meta property="og:image"              content="http://muestraiberoamericana.tv/imagenes/imgIndex/Logo%20MITEC.png" />
+        <meta property="og:image"              content="http://muestraiberoamericana.tv/imagenes/imgIndex/logoMitec.jpg" />
 
         <link rel="shortcut icon" href="{{ asset('mitec.ico') }}" >
 

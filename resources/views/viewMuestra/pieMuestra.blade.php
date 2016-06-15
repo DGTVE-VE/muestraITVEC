@@ -28,15 +28,11 @@
             <div class="col-md-12 text-center">
                 <a data-original-title="Twitter" rel="tooltip"  href="#" class="btn btn-twitter over-logo">
                     <i class="fa fa-twitter fa-2x"></i>
-                </a>
-                <a data-original-title="Facebook" rel="tooltip"  href="#" class="btn btn-facebook">
-                    <i class="fa fa-facebook fa-2x"></i>
-                </a>
-                <div
-                    class="fb-like"
-                    data-share="true"
-                    data-width="450"
-                    data-show-faces="true">
+                </a>               
+                <div 
+                    class="fb-share-button" 
+                    data-layout="button" 
+                    data-mobile-iframe="true">
                 </div>
             </div>
         </center>
