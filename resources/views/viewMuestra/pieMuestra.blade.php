@@ -29,8 +29,8 @@
                 <a data-original-title="Twitter" rel="tooltip"  href="#" class="btn btn-twitter over-logo">
                     <i class="fa fa-twitter fa-2x"></i>
                 </a>
-                <a data-original-title="Facebook" rel="tooltip"  href="#" class="btn btn-facebook">
-                    <i class="fa fa-facebook fa-2x"></i>
+                <a data-original-title="Facebook" rel="tooltip" class="btn btn-facebook" data-share="true">
+                    <i class="fa fa-facebook fa-2x" data-share="true"></i>
                 </a>
                 <!--                <div
                                     class="fb-like"

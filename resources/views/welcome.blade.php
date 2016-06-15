@@ -21,7 +21,7 @@
                                                         otorgar un reconocimiento a la mejor producción televisiva educativa o cultural iberoamericana,
                                                         por lo que se convoca a participar a los medios públicos y privados interesados en presentar
                                                         sus mejores contenidos." />
-        <meta property="og:image"              content="http://muestraiberoamericana.tv/imagenes/imgIndex/Logo%20MITEC.png" />
+        <meta property="og:image"              content="http://muestraiberoamericana.tv/imagenes/imgIndex/logoMitec.jpg" />
 
         <link rel="shortcut icon" href="{{ asset('mitec.ico') }}" >
 
