@@ -22,6 +22,20 @@
                                                         por lo que se convoca a participar a los medios públicos y privados interesados en presentar
                                                         sus mejores contenidos." />
         <meta property="og:image"              content="http://muestraiberoamericana.tv/imagenes/imgIndex/logoMitec.jpg" />
+        
+        <!--twitter metas-->
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@CanalIbe">
+        <meta name="twitter:creator" content="@SarahMaslinNir">
+        <meta name="twitter:title" content="Muestra Iberoamericana de Televisión Educativa y cultural">
+        <meta name="twitter:description" content="La Muestra Iberoamericana de Televisión Educativa y Cultural 2016 
+                                                        es un evento organizado por la DGTVE de México en coordinación con 
+                                                        la Asociación de Televisión Educativa Iberoamericana, Dicho evento tiene como objetivo
+                                                        otorgar un reconocimiento a la mejor producción televisiva educativa o cultural iberoamericana,
+                                                        por lo que se convoca a participar a los medios públicos y privados interesados en presentar
+                                                        sus mejores contenidos.">
+        <meta name="twitter:image" content="http://muestraiberoamericana.tv/imagenes/imgIndex/logoMitec.jpg">
 
         <link rel="shortcut icon" href="{{ asset('mitec.ico') }}" >
 

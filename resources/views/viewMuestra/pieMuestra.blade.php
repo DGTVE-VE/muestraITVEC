@@ -1,5 +1,5 @@
 <div class="row" style="background-color: #818181;">
-    <!--script para el api de Facebook-->
+    <!--SDK de Facebook-->
     <script>
         window.fbAsyncInit = function () {
             FB.init({
@@ -26,9 +26,16 @@
             {{ HTML::image('imagenes/imgIndex/logomitec.png','Logo Muestra Iberoamericana', array('class'=>'img-responsive'))}}
             <br>
             <div class="col-md-12 text-center">
-                <a data-original-title="Twitter" rel="tooltip"  href="#" class="btn btn-twitter over-logo">
-                    <i class="fa fa-twitter fa-2x"></i>
-                </a>               
+
+                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + '://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'twitter-wjs');</script>
                 <div 
                     class="fb-share-button" 
                     data-layout="button" 
