@@ -1,4 +1,5 @@
 <div class="row" style="background-color: #818181;">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
     <!--SDK de Facebook-->
     <script>
         window.fbAsyncInit = function () {
@@ -25,23 +26,27 @@
             <br><br><br>
             {{ HTML::image('imagenes/imgIndex/logomitec.png','Logo Muestra Iberoamericana', array('class'=>'img-responsive'))}}
             <br>
-            <div class="col-md-12 text-center">
-
-                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                if (!d.getElementById(id)) {
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = p + '://platform.twitter.com/widgets.js';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }
-            }(document, 'script', 'twitter-wjs');</script>
+            <div class="row">
+                <!--            <div class="col-md-12 text-center">-->
+                <div>
+                    <a href="https://twitter.com/share" class="twitter-share-button twitter-button">Tweet</a> <script>!function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + '://platform.twitter.com/widgets.js';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, 'script', 'twitter-wjs');</script>
+                </div>
                 <div 
                     class="fb-share-button" 
                     data-layout="button" 
                     data-mobile-iframe="true">
                 </div>
+                <!--</div>-->    
             </div>
+
         </center>
     </div>
     <div class="col-md-1"></div>
@@ -83,16 +88,16 @@
         <hr>    
         <center>             
             <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:300px;width:500px;'><div id='gmap_canvas' style='height:300px;width:500px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://termsofusegenerator.net">terms of use generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map() {
-            var myOptions = {zoom: 16, center: new google.maps.LatLng(19.35699452613836, -99.1407719619018), mapTypeId: google.maps.MapTypeId.ROADMAP};
-            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-            marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(19.35699452613836, -99.1407719619018)});
-            infowindow = new google.maps.InfoWindow({content: '<strong>Centro Nacional de las artes</strong><br>Avenida Río Churubusco 79, Coyoacán, Colonia Country Club, 04220 Ciudad de México<br>'});
-            google.maps.event.addListener(marker, 'click', function () {
-                infowindow.open(map, marker);
-            });
+        var myOptions = {zoom: 16, center: new google.maps.LatLng(19.35699452613836, -99.1407719619018), mapTypeId: google.maps.MapTypeId.ROADMAP};
+        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+        marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(19.35699452613836, -99.1407719619018)});
+        infowindow = new google.maps.InfoWindow({content: '<strong>Centro Nacional de las artes</strong><br>Avenida Río Churubusco 79, Coyoacán, Colonia Country Club, 04220 Ciudad de México<br>'});
+        google.maps.event.addListener(marker, 'click', function () {
             infowindow.open(map, marker);
-        }
-        google.maps.event.addDomListener(window, 'load', init_map);</script>
+        });
+        infowindow.open(map, marker);
+    }
+    google.maps.event.addDomListener(window, 'load', init_map);</script>
             <br>
         </center>
     </div>
